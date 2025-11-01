@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cssbox3.html</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Layout utama */
+    .layout {
+      width: 850px;
+      height: 600px;
+      margin: 40px auto;
+      border: 3px solid black;
+      background-color: white;
+      position: relative;
+      padding: 10px;
+    }
+
+    /* Tabel bar atas seperti browser */
+    .browser {
+      width: 100%;
+      border: 2px solid black;
+      border-collapse: collapse;
+      background-color: #e0e0e0;
+      margin-bottom: 10px;
+    }
+
+    .browser td {
+      border: 2px solid black;
+      padding: 8px;
+    }
+
+    .logo {
+      width: 120px;
+      background-color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .address-bar {
+      background-color: white;
+      text-align: left;
+      padding-left: 10px;
+      font-family: monospace;
+    }
+
+    /* Kotak-kotak berwarna */
+    .box {
+      position: absolute;
+      border: 2px solid black;
+    }
+
+    .kuning {
+      background-color: yellow;
+      top: 90px;
+      left: 20px;
+      width: 120px;
+      height: 70px;
+    }
+
+    .oranye {
+      background-color: orange;
+      top: 90px;
+      left: 160px;
+      right: 20px;
+      height: 70px;
+    }
+
+    .hijau {
+      background-color: lightgreen;
+      top: 170px;
+      left: 20px;
+      width: 120px;
+      bottom: 80px;
+    }
+
+    .abu {
+      background-color: lightgray;
+      top: 170px;
+      left: 160px;
+      right: 160px;
+      bottom: 80px;
+    }
+
+    .biru-muda {
+      background-color: deepskyblue;
+      top: 170px;
+      right: 20px;
+      width: 120px;
+      bottom: 80px;
+    }
+
+    .biru-tua {
+      background-color: blue;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="layout">
+    <!-- Tabel Moqzila di atas -->
+    <table class="browser">
+      <tr>
+        <td class="logo">Moqzila</td>
+        <td class="address-bar">http://box2.com</td>
+      </tr>
+    </table>
+
+    <!-- Kotak-kotak -->
+    <div class="box kuning"></div>
+    <div class="box oranye"></div>
+    <div class="box hijau"></div>
+    <div class="box abu"></div>
+    <div class="box biru-muda"></div>
+    <div class="box biru-tua"></div>
+  </div>
+
+</body>
+</html>

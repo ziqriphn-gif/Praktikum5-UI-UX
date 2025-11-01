@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cssbox2.html</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .layout {
+      width: 850px;
+      margin: 40px auto;
+      border: 3px solid black;
+      padding: 15px;
+      background-color: white;
+    }
+
+    .browser {
+      width: 800px;
+      margin: 0 auto 15px auto;
+      border: 2px solid black;
+      border-collapse: collapse;
+      background-color: #e0e0e0;
+    }
+
+    .browser td {
+      border: 2px solid black;
+      padding: 8px;
+    }
+
+    .logo {
+      width: 120px;
+      background-color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .address-bar {
+      background-color: white;
+      text-align: left;
+      padding-left: 10px;
+      font-family: monospace;
+    }
+
+    .boxmodel {
+      width: 800px;
+      margin: 0 auto;
+      border: 2px solid black;
+      border-collapse: separate;
+      border-spacing: 10px;
+      background-color: white;
+    }
+
+    .boxmodel td {
+      border: 2px solid black;
+      vertical-align: top;
+      padding: 5px;
+    }
+
+    .header {
+      background-color: lightgreen;
+      height: 80px;
+      border: 2px solid black;
+    }
+
+    .kiri {
+      width: 200px;
+    }
+
+    .box-kiri {
+      background-color: yellow;
+      height: 150px;
+      border: 2px solid black;
+      margin-bottom: 10px;
+    }
+
+    .kanan {
+      width: 580px;
+    }
+
+    .box-kanan1 {
+      background-color: orange;
+      height: 150px;
+      border: 2px solid black;
+      margin-bottom: 10px;
+    }
+
+    .box-kanan2 {
+      background-color: deepskyblue;
+      height: 150px;
+      border: 2px solid black;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="layout">
+    <h2>Layout CSS Box Model</h2>
+
+    <table class="browser">
+      <tr>
+        <td class="logo">Moqzila</td>
+        <td class="address-bar">http://box1b.com</td>
+      </tr>
+    </table>
+
+    <table class="boxmodel">
+      <tr>
+        <td colspan="2" class="header"></td>
+      </tr>
+
+      <tr>
+        <td class="kiri">
+          <div class="box-kiri"></div>
+          <div class="box-kiri"></div>
+        </td>
+        <td class="kanan">
+          <div class="box-kanan1"></div>
+          <div class="box-kanan2"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
